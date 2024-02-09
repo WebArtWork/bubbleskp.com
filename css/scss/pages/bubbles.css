@@ -1,0 +1,78 @@
+.bubbles {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  pointer-events: none;
+  z-index: 3;
+  transform: scale(0.7);
+  opacity: 0.5; }
+  .bubbles .bubble {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    opacity: 0; }
+    .bubbles .bubble:nth-child(1) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 6.2s ease-in-out infinite 200ms;
+      left: 0; }
+    .bubbles .bubble:nth-child(2) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 5s ease-in-out infinite 600ms;
+      left: 10%; }
+    .bubbles .bubble:nth-child(3) {
+      width: 50px;
+      height: 50px;
+      background: radial-gradient(white, #a5ffff); }
+    .bubbles .bubble:nth-child(4) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 8.4s ease-in-out infinite 100ms;
+      left: 20%; }
+    .bubbles .bubble:nth-child(5) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 7.6s ease-in-out infinite 600ms;
+      left: 30%; }
+    .bubbles .bubble:nth-child(6) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 5.7s linear infinite 800ms;
+      left: 40%; }
+    .bubbles .bubble:nth-child(7) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 3.6s ease-in infinite 400ms;
+      left: 50%; }
+    .bubbles .bubble:nth-child(8) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 4.2s ease-out infinite 500ms;
+      left: 60%; }
+    .bubbles .bubble:nth-child(9) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 6s ease infinite 150ms;
+      left: 70%; }
+    .bubbles .bubble:nth-child(10) {
+      background: radial-gradient(white, #a5ffff);
+      animation: bubble 9.6s ease-in-out infinite 670ms;
+      left: 80%; }
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  16% {
+    transform: translateY(-100px);
+    opacity: 1; }
+  70% {
+    transform: translateY(-1600px);
+    opacity: 1; }
+  71% {
+    transform: translateY(-1600);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 0; } }
+
+/*# sourceMappingURL=bubbles.css.map */

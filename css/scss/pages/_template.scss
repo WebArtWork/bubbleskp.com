@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$blue: #007eff;
+$dark: #1c1c1c;
+$white: #ffffff;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+}
+
+body {
+	overflow-x: hidden;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow-x: hidden;
+}
+.fullscreen {
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+
+}
+.G-c {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+	flex-shrink: 0;
+	min-height: 300px;
+	position: relative;
+	.img-bg {
+		width: 100%;
+	}
+}
+.G-i {
+    width: max-content;
+	max-width: 1200px;
+    color: #000;
+    font-size: 16px;
+
+}
+.G-i.absolute_ {
+	position: absolute;		
+	top: 0;
+	left: 8%;
+	max-width: 500px;
+	z-index: 4;
+	padding: 40px 40px 70px 40px;
+	background: rgb(255 255 255);
+	box-shadow: 2px 20px 50px #292c42;
+    background: linear-gradient(36deg, #ccedff, white);
+	transform: translate(0px, -20px);
+}
+.fullscreen {
+	width: 100%;
+	min-height: 100%;
+}
+.first {
+	margin: 0;
+	background: linear-gradient(177deg, #0dffff -2%, #0dc7ff 9%, #ffee97) no-repeat fixed top center/100% 100%;
+}
+.container_ {
+	z-index: 3;
+}
+
+h1 {
+	font-family: 'Roboto';
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, transparent, #e5e5e5, #e5e5e5, transparent) no-repeat bottom center / 100% 2px;
+    padding: 0 0 30px 0;
+    font-weight: 300;
+}
+h2 {}
+p {
+	font-family: 'Roboto';
+    font-weight: normal;
+}
+
+hgroup.logo {
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	h1 {
+		order: 2;
+		font-weight: bold;
+		font-size: 39px;
+    	color: #0063c2;
+	}
+	h2 {
+		order: 1;
+		font-family: "Quicksand";
+		font-weight: bold;
+		font-size: 154px;
+		text-shadow: -6px 4px 0 #0063c2, -12px 11px 0 #0dffff;
+		color: #ffffff;
+	}
+}
+.bbl-icon {
+    margin: 160px auto 0 auto;
+    display: block;
+    width: 60%;
+    max-width: 260px;
+    filter: drop-shadow(-4px 4px 0 #0063c2) drop-shadow(-2px 4px 0 #0dffff);
+	img {
+		width: 100%;
+	}
+}
+.video-bg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.menu {
+    text-decoration: none;
+    font-size: 34px;
+    color: #0063c2;
+    background: #0df3ff;
+    border-radius: 40px;
+    transition: 400ms;
+    margin: 40px auto 0 auto;
+    width: max-content;
+    padding: 18px 60px;
+    display: block;
+    text-transform: uppercase;
+    border: 4px solid #0063c2;
+	&:hover {
+		color: #0063c2;
+		transform: scale(1.06);
+		background-color: white;
+	}
+}
+
+
+
+
+.first {
+	padding-bottom: 300px;
+	.G-i {
+		position: relative;
+		background: none;
+		padding: 0;
+		left: 0;
+		box-shadow:  none;
+	}
+}
+.text-block {
+	width: 50%;
+	padding: 60px;
+}
+
+.hotel {}
+.kitchen {}
+.cocktails {
+	background: black;
+	padding: 40px 0;
+	.slider {
+		max-width: 800px;
+	}
+}
+.pool {}
+.bath {}
+.lounge {}
+.activity {}
+
+
+.ssslide {
+	display: flex;
+	justify-content: center;
+	align-items: center;		
+	img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+	}
+}
+
+.slider {
+	width: 100%;
+	max-width: calc(100% - 80px);
+	position: relative;
+	.slick-prev {
+		left: 0;
+		background: linear-gradient(90deg, #16cbff, transparent) no-repeat top left calc(0% + -1400px) / 100% 100%;
+			&:hover {
+				background-position: center left 0;
+			}
+
+	}
+	.slick-next {
+		right: 0;
+		    background: linear-gradient(-90deg, #16cbff, transparent) no-repeat top right calc(0% + -1400px) / 100% 100%;
+			&:hover {
+				background-position: center right 0;
+			}
+
+	}
+	.slick-arrow {
+		display: block;
+		position: absolute;
+		top: 0;
+		width: 30%;
+		height: 0%;
+		border: none;
+		z-index: 1;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		font-size: 0;
+		transition: 500ms;
+		mix-blend-mode: hard-light;
+		opacity: 1;
+
+	}
+}
+ 
+.decor {
+	width: 1920px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 910px);
+    pointer-events: none;
+    z-index: 3;
+    background: url(../img/decor.svg) no-repeat center center/1920px auto;
+	transform: scale(1.6);
+	display: none;
+}
+.decor.v2 {background: url(../img/decor2.svg) no-repeat center center/1920px auto;}
+.decor.v3 {background: url(../img/decor3.svg) no-repeat center center/1920px auto;}

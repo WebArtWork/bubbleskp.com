@@ -1,0 +1,72 @@
+@media screen and (min-width:1000px) {
+    .G-i {
+        
+    }
+}
+
+@media screen and (max-width:900px) {
+    .hotel {
+        .G-i {
+            right: 0;
+            padding: 30px;
+        }
+    }
+    .text-block {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .G-c {
+        margin: 0;
+    }
+    .G-i.absolute_ {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        transform: none;
+        left: 0;
+        padding-top: 30px;
+        order: 1;
+    }
+    .slider {
+        order: 2;
+        max-width: 100%;
+    }
+
+    .kitchen .G-i {
+        .menu {
+            margin: 40px 0 0 0;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    hgroup.logo h1 {
+        font-size: 24px;
+    }
+    hgroup.logo h2 {
+        font-size: 84px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .bbl-icon {width: 50%;}
+    hgroup.logo {
+        transform: scale(0.8);
+        padding: 0;
+    }
+    hgroup.logo h1 {
+        font-size: 22px;
+    }
+    hgroup.logo h2 {
+        font-size: 84px;
+    }
+}
+
+@media screen and (max-height:900px) {
+    .fullscreen {
+        height: auto;
+    }
+}

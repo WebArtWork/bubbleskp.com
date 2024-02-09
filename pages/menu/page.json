@@ -1,0 +1,12 @@
+{
+	"name": "menu",
+	"menu": [{
+		"name": "Salads",
+		"products": [{
+			"name": "Chezar",
+			"desscription": "Cool salad",
+			"price": "145 uah",
+			"weight": "200gram"
+		}]
+	}]
+}
