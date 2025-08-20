@@ -5,40 +5,38 @@ $("#form").submit(function (event) {
 
 	input_serialized = $(this).serializeArray();
 
-	input_serialized.forEach(field => {
+	input_serialized.forEach((field) => {
 		body[field.name] = field.value;
 	});
 
-	body.needRoom = body.needRoom === 'on';
+	body.needRoom = body.needRoom === "on";
 
-	body.needVat = body.needVat === 'on';
+	body.needVat = body.needVat === "on";
 
-	body.needSauna = body.needSauna === 'on';
+	body.needSauna = body.needSauna === "on";
 
-//  &&
-// 		(body.needRoom || body.needVat || body.needSauna)
-	if(
-		body.name && body.phone && body.date && body.time
-	) {
+	//  &&
+	// 		(body.needRoom || body.needVat || body.needSauna)
+	if (body.name && body.phone && body.date && body.time) {
 		$.ajax({
 			type: "POST",
-			url: '/api/bubbles/create',
+			url: "/apicreate",
 			data: body,
-			success: ()=>{
+			success: () => {
 				Swal.fire({
-					icon: 'success',
+					icon: "success",
 					title: "Ми зв'яжемося з вами найближчим часом",
 					showConfirmButton: false,
-					timer: 1500
-				})
+					timer: 1500,
+				});
 			},
-			dataType: 'json'
+			dataType: "json",
 		});
 	} else {
 		Swal.fire({
-			icon: 'error',
-			title: 'Будь ласка, заповніть усі поля форми',
-			timer: 1500
+			icon: "error",
+			title: "Будь ласка, заповніть усі поля форми",
+			timer: 1500,
 		});
 	}
 });
